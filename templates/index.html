@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Conversor de Frases Matemáticas</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Conversor de Frases Matemáticas</h1>
+    <form method="post">
+      <input type="text" name="frase" placeholder="Ex: o dobro de 4" value="{{ entrada }}">
+      <button type="submit">Calcular</button>
+    </form>
+
+    {% if expressao %}
+      <p><strong>Expressão:</strong> {{ expressao }}</p>
+    {% endif %}
+
+    {% if resultado %}
+      <p><strong>Resultado:</strong> {{ resultado }}</p>
+    {% endif %}
+  </div>
+</body>
+</html>

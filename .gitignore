@@ -1,0 +1,36 @@
+# Arquivos do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtualenv
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# PyInstaller
+*.spec
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints
+
+# VSCode
+.vscode/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de logs e temporários
+*.log
+*.tmp
+*.swp
+
+# Arquivos do Flask
+instance/
+*.sqlite
